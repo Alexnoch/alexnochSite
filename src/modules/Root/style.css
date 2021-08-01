@@ -1,11 +1,12 @@
 .topbar-menu{
-    max-width: 1920px;
+    position: absolute;
+    width: 100%;
     height:50px;
-    background-color: rgba(0, 0, 0, 0.767);
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 700;
     color:white;
+    background-color: rgba(0, 0, 0, 0.230);
 }
 
 .topbar-container{
@@ -13,6 +14,19 @@
     margin:0 auto;
     display: flex;
     align-items: center;
+ 
+}
+
+@media(max-width:1240px){
+    .topbar-container{
+        margin:0 20px;
+    }
+}
+
+@media(max-width:960px){
+    .topbar-container{
+        justify-content: space-between;
+    }
 }
 
 .topbar-logo{
@@ -21,6 +35,12 @@
 
 .topbar-menu-sections{
     
+}
+
+@media(max-width:960px){
+    .topbar-menu-sections{
+        display: none;
+    }
 }
 
 .topbar-menu-link{
@@ -45,6 +65,12 @@
     font-weight: 500;
 }
 
+@media(max-width:960px){
+    .topbar-menu-social{
+        display: none;
+    }
+}
+
 .topbar-menu-social-contactMe{
     margin-right: 20px;
 }
@@ -57,4 +83,25 @@
 
 .topbar-menu-social-icons{
     margin-right: 20px;
+}
+
+.topbar-menu-sublogo{
+    display: none;
+}
+
+@media(max-width:960px){
+    .topbar-menu-sublogo{
+      display: block;
+    }
+}
+
+.topbar-menu-dropdown-menu-container{
+    display: none;
+}
+
+@media(max-width:960px){
+    .topbar-menu-dropdown-menu-container{
+        display: block;
+        cursor: pointer;
+    }
 }

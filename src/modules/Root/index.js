@@ -6,10 +6,12 @@ import Logo  from '../../static/icons/logo.png';
 import Email from '../../static/icons/email.png';
 import Git from '../../static/icons/github.png';
 import Vk from '../../static/icons/vk.png';
+import DropDown from '../../static/icons/dropDown.png';
+import SubLogo from '../../static/icons/alexNoch.png';
 import './style.css';
 
 export const Root = () =>{
-    return(
+    return([
     <div className="topbar-menu">
         <div className="topbar-container">
             <div className="topbar-logo">
@@ -27,10 +29,18 @@ export const Root = () =>{
                 <img className="topbar-menu-social-icons"src={Email} />
                 <img className="topbar-menu-social-icons"src={Git} />
             </div>
-            <Switch>
-                <Route exact path="/homePage" component={HomePage} />
-            </Switch>
+            <div className="topbar-menu-sublogo">
+                <img src={SubLogo} alt="Logotipe"/>
+            </div>
+            <div className="topbar-menu-dropdown-menu-container">
+                <img src={DropDown} alt="Dropdown menu"/>
+            </div>
         </div>
-    </div>
-    )
+       
+    </div>,
+     <Switch>
+         <Route exact path="/homePage" component={HomePage} />
+    </Switch>
+    
+    ])
 }

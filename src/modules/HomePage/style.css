@@ -1,0 +1,12 @@
+.homepage-container{
+    max-width: 100%;
+    min-height: 500px;
+    /* max-width: 100%; */
+    /* background-image: url('../../static/images/homepageHeader.jpg'); */
+}
+
+.homepage-container-image{
+    width:100%;
+    min-height: 500px;
+    object-fit: cover;
+}
