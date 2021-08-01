@@ -1,0 +1,60 @@
+.topbar-menu{
+    max-width: 1920px;
+    height:50px;
+    background-color: rgba(0, 0, 0, 0.767);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color:white;
+}
+
+.topbar-container{
+    max-width:1200px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.topbar-logo{
+    margin-right: 20px;
+}
+
+.topbar-menu-sections{
+    
+}
+
+.topbar-menu-link{
+    margin-right: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:white;
+    font-size: 14px;
+}
+
+.topbar-menu-link::after{
+    content:'|';
+    color:#FFC579;
+    margin-left: 20px;
+}
+
+.topbar-menu-social{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.topbar-menu-social-contactMe{
+    margin-right: 20px;
+}
+
+.topbar-menu-social-contactMe::before{
+    content:'|';
+    color:#FFC579;
+    margin-right: 20px;
+}
+
+.topbar-menu-social-icons{
+    margin-right: 20px;
+}
