@@ -76,3 +76,8 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+@font-face {
+  font-family: 'Lato_regular';
+  src: local('Lato_regular') url(./fonts/LatoRegular.ttf) format('ttf');
+}

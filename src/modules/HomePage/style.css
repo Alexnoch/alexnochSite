@@ -1,12 +1,46 @@
 .homepage-container{
+    position: relative;
     max-width: 100%;
     min-height: 500px;
     /* max-width: 100%; */
     /* background-image: url('../../static/images/homepageHeader.jpg'); */
+    z-index: 1;
 }
 
 .homepage-container-image{
     width:100%;
     min-height: 500px;
     object-fit: cover;
+}
+
+.homepage-conitaner-absolute{
+    position: absolute;
+    top:110px;
+    width:100%;
+}
+
+.homepage-container-relative{
+    position: relative;
+    max-width:1240px;
+    height:200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.homepage-container-header{
+    position: absolute;
+    font-family: 'Lato_regular';
+    font-size: 18px;  
+    color:white;
+    
+}
+
+.homepage-container-header-title{
+    font-size: 48px;
+}
+
+.homepage-container-header-skills::before{
+    content:'|';
+    margin-right:10px;
+    color:#FFC579;
 }

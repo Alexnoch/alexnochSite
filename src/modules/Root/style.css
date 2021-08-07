@@ -6,7 +6,8 @@
     font-size: 14px;
     font-weight: 700;
     color:white;
-    background-color: rgba(0, 0, 0, 0.230);
+    background-color: rgba(0, 0, 0, 0.380);
+    z-index: 2;
 }
 
 .topbar-container{
