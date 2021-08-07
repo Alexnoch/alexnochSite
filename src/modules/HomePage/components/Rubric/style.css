@@ -1,0 +1,16 @@
+.rubric-background{
+    width:100%;
+    height:700px;
+    background-image: url(../../../../static/images/background.png);
+}
+
+.rubric-container{
+    width:1240px;
+    margin: 0 auto;
+}
+
+.rubric-header{
+    margin:0 auto;
+    text-align: center;
+    color:white;
+}

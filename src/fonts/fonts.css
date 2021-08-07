@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Lato';
+    src: local('Lato') url(./LatoBold.ttf) format('ttf');
+  }
+
+@font-face {
+  font-family: 'Lato_regular';
+  src: local('Lato_regular') url(./LatoRegular.ttf) format('ttf');
+}
