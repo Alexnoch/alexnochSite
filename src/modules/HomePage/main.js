@@ -1,5 +1,5 @@
  import ImageTitle from '../../static/images/homepageTitle.jpg';
- import { Rubric } from './components/Rubric/index';
+ import { Rubric } from './components/Rubric/index.js';
  import './style.css';
 
  const HomePage = (props)=>{

@@ -1,0 +1,24 @@
+.rubric-chapter-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:410px;
+    height: 287px;
+    color: white;
+}
+
+.rubric-chapter-container-header{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.rubric-chapter-container-image{
+    position: absolute;
+    object-fit: cover;
+    top:0;
+    z-index: 1;
+}

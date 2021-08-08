@@ -7,10 +7,20 @@
 .rubric-container{
     width:1240px;
     margin: 0 auto;
+    padding-top:70px;
 }
 
 .rubric-header{
     margin:0 auto;
     text-align: center;
     color:white;
+}
+
+.rubric-header-welcomeText{
+    white-space:pre-line;
+}
+
+.rubric-sections{
+    display: flex;
+    justify-content: space-between;
 }
