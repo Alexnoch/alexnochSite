@@ -1,11 +1,12 @@
 .rubric-chapter-container{
+    width:410px;
+    height: 287px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width:410px;
-    height: 287px;
+    font-family: 'Montserrat';
     color: white;
 }
 
@@ -26,6 +27,33 @@
     width:80%;
     height:3px;
 
+}
+
+.rubric-chapter-container-position{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:90px;
+}
+
+.rubric-chapter-container-link{
+    position: relative;
+    margin-top: 44px;
+    margin-right: 60px;
+    align-self: flex-end;
+    font-size: 12px;
+}
+
+.rubric-chapter-container-link::after{
+    position: absolute;
+    content:"";
+    width: 8px;
+    height: 8px;
+    background-color:#FFC579;
+    top:6px;
+    right:-10px;
+    transform: matrix(0, -1, -1, 0, 0, 0);
 }
 
 .rubric-chapter-container-image{
