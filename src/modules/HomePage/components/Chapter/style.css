@@ -10,10 +10,22 @@
 }
 
 .rubric-chapter-container-header{
+    position: relative;
     font-family: 'Montserrat';
     font-size: 36px;
     text-transform: uppercase;
     z-index: 2;
+}
+
+.rubric-chapter-container-header::after{
+    position: absolute;
+    content:"";
+    background-color:#FFC579;
+    bottom:0;
+    left:14px;
+    width:80%;
+    height:3px;
+
 }
 
 .rubric-chapter-container-image{
