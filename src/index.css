@@ -1,1 +1,13 @@
+@font-face {
+    font-family:"Montserrat-regular";
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
 
+@font-face {
+    font-family: "Lato";
+    src: url(./fonts/LatoRegular.ttf);
+}
+
+body{
+    font-family:"Lato", "Montserrat-regular";
+}

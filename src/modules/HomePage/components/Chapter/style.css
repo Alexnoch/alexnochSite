@@ -43,17 +43,23 @@
     margin-right: 60px;
     align-self: flex-end;
     font-size: 12px;
+    cursor: pointer;
+    z-index: 2;
 }
 
 .rubric-chapter-container-link::after{
+    content: '';
     position: absolute;
-    content:"";
-    width: 8px;
-    height: 8px;
-    background-color:#FFC579;
-    top:6px;
-    right:-10px;
-    transform: matrix(0, -1, -1, 0, 0, 0);
+    left: 127px;
+    top: 0;
+    bottom: -1px;
+    border: 4px solid transparent;
+    border-top: 7px solid #ffc579;
+    transform: rotate(-90deg)
+}
+
+.rubric-chapter-container-link:hover{
+    border-bottom: 1px solid rgb(136, 135, 135);
 }
 
 .rubric-chapter-container-image{

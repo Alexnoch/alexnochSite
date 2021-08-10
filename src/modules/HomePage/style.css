@@ -2,8 +2,6 @@
     position: relative;
     max-width: 100%;
     min-height: 500px;
-    /* max-width: 100%; */
-    /* background-image: url('../../static/images/homepageHeader.jpg'); */
     z-index: 1;
 }
 
@@ -29,13 +27,16 @@
 
 .homepage-container-header{
     position: absolute;
-    font-family: 'Lato';
-    font-size: 18px;  
     color:white;
 }
 
 .homepage-container-header-title{
     font-size: 48px;
+}
+
+.homepage-container-header-skills{
+    font-family: "Lato";
+    font-size: 18px;
 }
 
 .homepage-container-header-skills::before{

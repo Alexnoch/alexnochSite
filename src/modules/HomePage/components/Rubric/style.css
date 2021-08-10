@@ -1,26 +1,47 @@
 .rubric-background{
     width:100%;
-    height:700px;
     background-image: url(../../../../static/images/background.png);
 }
 
 .rubric-container{
     width:1240px;
     margin: 0 auto;
-    padding-top:70px;
+    padding:70px 0;
 }
 
 .rubric-header{
     margin:0 auto;
+    font-family: "Lato";
     text-align: center;
+    letter-spacing: 0.05em;
     color:white;
 }
 
-.rubric-header-welcomeText{
-    font-family: 'Montserrat';
-    font-size: 18px;
-    white-space:pre-line;
+.rubric-header h2{
+    margin-bottom:10px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
+.rubric-header-welcomeText{
+    position: relative;
+    width:64%;
+    margin: 0 auto 65px auto;
+    font-family:"Montserrat-regular";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    word-wrap: normal;
+}
+
+.rubric-header-welcomeText::after{
+    position: absolute;
+    bottom:-20px;
+    left:50%;
+    content:"";
+    width:20px;
+    background-color:#FFC579 ;
+    height:1px;
 }
 
 .rubric-sections{
