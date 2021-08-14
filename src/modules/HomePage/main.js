@@ -1,6 +1,7 @@
  import ImageTitle from '../../static/images/homepageTitle.jpg';
  import { Rubric } from './components/Rubric/index.js';
  import { AboutWork } from './components/AboutWork/index';
+ import { AboutSite } from './components/AboutSite';
  import './style.css';
 
  const HomePage = (props)=>{
@@ -24,6 +25,7 @@
             </div>
             <Rubric />
             <AboutWork />
+            <AboutSite />
         </div>
     )
 }

@@ -1,0 +1,24 @@
+.aboutSite-container-item{
+    text-align: center;
+}
+
+.aboutSite-container-item>img{
+    display: inline;
+}
+
+.aboutSite-container-header{
+    font-family: 'Montserrat-regular';
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #FFC579;
+    line-height: 32px;
+}
+
+.aboutSite-container-text{
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FDEFE6;
+}

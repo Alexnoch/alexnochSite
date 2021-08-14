@@ -1,0 +1,15 @@
+.aboutSite-background{
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.924);
+    background-image: url(../../../../static/images/backgroundBlack.svg);
+    border-top: 1px solid #F8F1E7;
+    border-bottom: 1px solid #F8F1E7;
+}
+
+.aboutSite-container{
+    max-width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding:65px 0;
+}
