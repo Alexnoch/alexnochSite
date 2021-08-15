@@ -4,7 +4,6 @@ import './style.css';
 
 export const AboutWork = () =>{
 
-
     return<div className="aboutWork-background">
         <div className="aboutWork-container">
             <h2 className="aboutWork-header">Подход к работе</h2>

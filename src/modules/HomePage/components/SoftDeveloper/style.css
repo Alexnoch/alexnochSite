@@ -1,0 +1,106 @@
+.softDeveloper-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:15px;
+    padding:30px 40px;
+    background: rgba(54, 53, 51, 0.49);
+    border-radius: 16px;
+}
+
+.softDeveloper-header-logo{
+    width:45%;
+}
+
+.softDeveloper-header-content-title{
+    font-family: 'Lato';
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FDEFE6;
+}
+
+.softDeveloper-header-content{
+    width:50%;
+}
+
+.softDeveloper-header-content-text{
+    font-family:'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.softDeveloper-header-content-button-container{
+    width:100%;
+    text-align: right;
+}
+
+.softDeveloper-header-content-button{
+    position: relative;
+    border:none;
+    border-bottom:1px solid #655E57;
+    background: none;
+    color:white;
+}
+
+.softDeveloper-header-content-button::after{
+    content: '';
+    position: absolute;
+    right:-20px;
+    top: 0;
+    bottom: -1px;
+    border: 4px solid transparent;
+    border-top: 7px solid #ffc579;
+    transform: rotate(-90deg)
+}
+
+.softDeveloper-news{
+    color:white;
+}
+
+.softDeveloper-news-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:18px;
+}
+
+.softDeveloper-news-container-buttons-wrapper{
+    margin: 0 auto;
+}
+
+.softDeveloper-news-container-buttons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color:white;
+}
+
+.softDeveloper-news-container-button { 
+    border:0px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 0;
+	height: 0;
+	border-top: 3px solid transparent;
+	border-bottom: 3px solid transparent;   
+}
+
+.left{
+    margin-right: 78px;
+    border-right: 7px solid #ffc579;
+}
+
+.right{
+    margin-left: 78px;
+    border-left: 7px solid #ffc579;
+}
+
+.softDeveloper-news-container-num{
+    margin-right:5px;
+    font-family: 'Lato';
+    font-size: 14px;
+    color: #FDEFE6;
+}

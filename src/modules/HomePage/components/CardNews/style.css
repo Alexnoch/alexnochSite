@@ -1,0 +1,43 @@
+.card-item-container{
+    width:24.5%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom:15px;
+    background-image: url('./../../../../static/images/cardBackground.png');
+}
+
+.card-item-container-body{
+    padding:15px;
+}
+
+.card-item-container-title{
+    font-family: 'Montserrat-regular';
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #DEAB69;
+    text-align: center;
+}
+
+.card-item-container-text{
+    font-family:'Montserrat-regular';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+}
+
+.card-item-container-footer{
+    display: flex;
+    justify-content: space-between;
+    padding:0 15px;
+}
+
+.card-item-container-footer-icon{
+    object-fit: contain;
+}
+
+.card-item-container-footer-link{
+    color:#DFAC67;
+    border-bottom:1px solid #DFAC67;
+}

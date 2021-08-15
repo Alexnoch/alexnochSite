@@ -2,6 +2,7 @@
  import { Rubric } from './components/Rubric/index.js';
  import { AboutWork } from './components/AboutWork/index';
  import { AboutSite } from './components/AboutSite';
+ import { Categories } from './components/Categories';
  import './style.css';
 
  const HomePage = (props)=>{
@@ -26,6 +27,7 @@
             <Rubric />
             <AboutWork />
             <AboutSite />
+            <Categories />
         </div>
     )
 }
