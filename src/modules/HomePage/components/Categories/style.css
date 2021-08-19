@@ -72,4 +72,14 @@
     color:white;
     background: none;
     border:none;
+    cursor:pointer;
+    
+}
+
+.categories-container-menu-button:hover{
+    color:#FFC579;
+}
+/* Модификаторы */
+.categories_active{
+    color:#FFC579;
 }

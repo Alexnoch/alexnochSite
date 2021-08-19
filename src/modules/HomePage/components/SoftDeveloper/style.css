@@ -85,7 +85,8 @@
     width: 0;
 	height: 0;
 	border-top: 3px solid transparent;
-	border-bottom: 3px solid transparent;   
+	border-bottom: 3px solid transparent;
+    cursor:pointer;   
 }
 
 .left{
