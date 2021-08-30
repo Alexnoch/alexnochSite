@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import React from "react";
 import { NavLink, Route, Router, Redirect , Switch} from 'react-router-dom';
-import { HomePage } from '../HomePage/index';
+import { HomePage } from '../HomePage/main.js';
 import Logo  from '../../static/icons/logo.png';
 import Email from '../../static/icons/email.png';
 import Git from '../../static/icons/github.png';
@@ -39,7 +39,12 @@ export const Root = () =>{
        
     </div>,
      <Switch>
-         <Route exact path="/homePage" component={HomePage} />
+         <Route exact path="/">
+             <Redirect to="/homePage" />
+         </Route>
+         <Route path="/homePage">
+             <HomePage />
+         </Route>
     </Switch>
     
     ])

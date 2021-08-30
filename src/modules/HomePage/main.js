@@ -5,7 +5,7 @@
  import { Categories } from './components/Categories';
  import './style.css';
 
- const HomePage = (props)=>{
+ export const HomePage = (props)=>{
    
     return(
         <div>
@@ -31,6 +31,3 @@
         </div>
     )
 }
-
-
-export default HomePage;
