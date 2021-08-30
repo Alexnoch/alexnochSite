@@ -1,9 +1,10 @@
- import ImageTitle from '../../static/images/homepageTitle.jpg';
- import { Rubric } from './components/Rubric/index.js';
- import { AboutWork } from './components/AboutWork/index';
- import { AboutSite } from './components/AboutSite';
- import { Categories } from './components/Categories';
- import './style.css';
+import ImageTitle from '../../static/images/homepageTitle.jpg';
+import { Rubric } from './components/Rubric/index.js';
+import { AboutWork } from './components/AboutWork/index';
+import { AboutSite } from './components/AboutSite';
+import { Categories } from './components/Categories';
+import { MyWork } from './components/MyWorks';
+import './style.css';
 
  export const HomePage = (props)=>{
    
@@ -28,6 +29,7 @@
             <AboutWork />
             <AboutSite />
             <Categories />
+            <MyWork />
         </div>
     )
 }
