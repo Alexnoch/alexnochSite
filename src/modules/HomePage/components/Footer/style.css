@@ -1,0 +1,40 @@
+.footer-wrapper{
+    background-image: url('./../../../../static/images/background.png');
+    border-bottom: 1px solid #363533;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding:65px 0;
+}
+
+.footer-contacts{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-map{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-categories{
+    font-family: "Montserrat-regular";
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #DEAB69;
+}
+
+.footer-links{
+    font-family: "Montserrat-regular";
+    font-weight: bold;
+    font-size: 14px;
+    color: #655E57;
+    text-decoration: underline;
+}

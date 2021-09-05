@@ -1,3 +1,83 @@
 .cardWork-wrapper{
     background: rgba(54, 53, 51, 0.49);
 }
+
+.cardWork-container{
+    display: flex;
+    padding: 35px 60px;
+    justify-content: space-between;
+}
+
+.cardWork-image-container{
+    margin-right:30px;
+    width:50%;
+    flex-shrink: 0;
+}
+
+.cardWork-image{
+    width:100%;
+    object-fit: cover;
+}
+
+.cardWork-aboutProject{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  
+}
+
+.cardWork-aboutProject-title{
+    width:100%;
+    margin-bottom: 20px;
+    font-family: 'Montserrat-regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.cardWork-aboutProject-name{
+    margin-bottom: 13px;
+    font-family: 'Montserrat-regular';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    /* text-transform: uppercase; */
+    text-align: center;
+    color:#FFC579;
+}
+
+.cardWork-aboutProject-desc{
+    font-family: 'Montserrat-regular';
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    color: #FDEFE6;
+}
+
+.cardWork-aboutProject-bottom{
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.cardWork-aboutProject-bottom-date{
+    font-family: 'Montserrat-regular';
+    font-weight: 600;
+    font-size: 12px;
+    color: #655E57;
+}
+
+.cardWork-aboutProject-bottom-link{
+    margin-left: auto;
+    margin-right:15px;
+    font-family: 'Montserrat-regular';
+    font-size: 14px;
+    color: #FFC579;
+    border-bottom: 0.5px solid #FFC579;
+}

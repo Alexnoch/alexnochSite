@@ -4,7 +4,7 @@ import './style.css' ;
 
 export const CardNews = (props) => {
     const  { image, header, text } = props;
-    return<div className="card-item-container">
+    return(<div className="card-item-container">
             <img className="card-item-container-image" src={image}/>
             <div className="card-item-container-body">
                 <h4 className="card-item-container-title">{header}</h4>
@@ -15,4 +15,4 @@ export const CardNews = (props) => {
                 <a className="card-item-container-footer-link">Читать</a>
             </div>
         </div>
-}
+    )}

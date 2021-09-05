@@ -4,7 +4,9 @@ import { AboutWork } from './components/AboutWork/index';
 import { AboutSite } from './components/AboutSite';
 import { Categories } from './components/Categories';
 import { MyWork } from './components/MyWorks';
+import Photos from './components/Photos/index'
 import './style.css';
+import Footer from './components/Footer';
 
  export const HomePage = (props)=>{
    
@@ -30,6 +32,8 @@ import './style.css';
             <AboutSite />
             <Categories />
             <MyWork />
+            <Photos />
+            <Footer />
         </div>
     )
 }

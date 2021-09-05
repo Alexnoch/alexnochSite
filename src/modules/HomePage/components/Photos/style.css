@@ -1,0 +1,52 @@
+.photos-wrapper{
+    background-image: url('./../../../../static/images/background.png');
+    border-bottom: 1px solid #363533;
+}
+
+.photos-container{
+    margin: 0 auto;
+    /* max-width: 1240px; */
+    padding:65px 0;
+}
+
+.photos-header-container{
+    margin: 0 auto;
+    max-width: 1240px;
+}
+
+.photos-header-title{
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.photos-header-text{
+    position: relative;
+    font-family: "Montserrat-regular";
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin-bottom: 65px;
+}
+
+.photos-header-text::after{
+    position: absolute;
+    bottom:-20px;
+    left:48%;
+    content:"";
+    width:45px;
+    background-color:#FFC579 ;
+    height:1px;
+}
+
+.photos-image-container{
+    display: flex;
+    justify-content: space-between;
+}
+
