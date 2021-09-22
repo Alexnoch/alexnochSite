@@ -81,3 +81,7 @@ select {
   font-family: 'Lato_regular';
   src: local('Lato_regular') url(./fonts/LatoRegular.ttf) format('ttf');
 }
+
+.lastRightMargin{
+  margin-right:0;
+}

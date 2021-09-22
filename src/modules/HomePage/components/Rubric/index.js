@@ -18,7 +18,7 @@ export const Rubric = () =>{
                     <div className="rubric-sections">
                         <Chapter name="Статьи" image={Articles}/>
                         <Chapter name="Обо мне" image={AboutMe}/>
-                        <Chapter name="Работы" image={MyWorks}/>
+                        <Chapter name="Работы" image={MyWorks} last="true"/>
                     </div>
                 </div>
             </div>

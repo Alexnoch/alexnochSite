@@ -4,7 +4,7 @@
 }
 
 .rubric-container{
-    width:1240px;
+    max-width:1240px;
     margin: 0 auto;
     padding:70px 0;
 }
@@ -46,5 +46,13 @@
 
 .rubric-sections{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+/* @media(max-width:1250px){
+    .rubric-sections{
+        flex-direction: column;
+        align-items: center;
+    }
+} */
