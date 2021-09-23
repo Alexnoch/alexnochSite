@@ -1,3 +1,4 @@
+import React from 'react';
 import p1 from './../../../../static/images/p1.jpg';
 import p2 from './../../../../static/images/p2.jpg';
 import p3 from './../../../../static/images/p3.jpg';
