@@ -8,6 +8,7 @@
 .aboutWork-container{
     max-width:1240px;
     margin: 0 auto;
+    padding:0 10px;
 }
 
 .aboutWork-header{
@@ -34,10 +35,21 @@
     word-wrap: normal;
 }
 
+@media(max-width:768px){
+    .aboutWork-titleText{
+        width:510px;
+    }
+}
+@media(max-width:520px){
+    .aboutWork-titleText{
+        width:405px;
+    }
+}
+
 .aboutWork-titleText::after{
     position: absolute;
     bottom:-20px;
-    left:50%;
+    left:47%;
     content:"";
     width:45px;
     background-color:#FFC579 ;
@@ -50,12 +62,36 @@
     align-items: center;
 }
 
+@media(max-width:1024px){
+    .aboutWork-main{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+}
+
 .aboutWork-main-text{
     width:50%;
+    font-size: 18px;
     color:white;
 }
+
+@media(max-width:1024px){
+    .aboutWork-main-text{
+        width:510px;
+    }
+}
+
+.aboutWork-main-text>p{
+    margin-bottom:10px;
+}
+
+
 
 .aboutWork-main-image{
     object-fit: contain;
 }
-
+ @media(max-width:1024px){
+     .aboutWork-main-image{
+         margin-bottom:20px;
+     }
+ }

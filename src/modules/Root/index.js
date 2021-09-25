@@ -11,7 +11,8 @@ import SubLogo from '../../static/icons/alexNoch.png';
 import './style.css';
 
 export const Root = () =>{
-    return([
+    return(
+        <>
     <div className="topbar-menu">
         <div className="topbar-container">
             <div className="topbar-logo">
@@ -37,7 +38,7 @@ export const Root = () =>{
             </div>
         </div>
        
-    </div>,
+    </div>
      <Switch>
          <Route exact path="/">
              <Redirect to="/homePage" />
@@ -45,7 +46,7 @@ export const Root = () =>{
          <Route path="/homePage">
              <HomePage />
          </Route>
-    </Switch>
-    
-    ])
+    </Switch>  
+    </>
+    )
 }

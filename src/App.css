@@ -85,3 +85,7 @@ select {
 .lastRightMargin{
   margin-right:0;
 }
+
+.accent{
+  color:#FFC579;
+}

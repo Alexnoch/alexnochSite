@@ -1,17 +1,24 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin")
 
 module.exports = {
-    watch:true,
-    mode:'production',
+    mode:'development',
     devtool: "eval-cheap-module-source-map",
     entry:'./src/index.js',
       output:{
-        filename:'app.js',
-        path:path.resolve(__dirname,'build')  
+        filename:'index.js',
+        path:path.resolve(__dirname,'build'),
+        assetModuleFilename:'[path][name][ext]'  
     },
     module:{
         rules:[
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+            },
             {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
@@ -27,30 +34,37 @@ module.exports = {
                 use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
             {
-                test: /\.(png|jpg|gif|svg)$/i,
-                use: [
-                {
-                    loader: 'url-loader',
-                    options: {
-                    limit: 8192,
-                    name: '[name].[hash:7].[ext]'
-                      },
-                },
-                ],
-            },
-            {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-                loader: 'file-loader',
-                options: {
-                  name: '[name].[ext]'
-                }
+                test: /\.(woff(2)?|ttf|eot|svg|png|jpg|gif)(\?v=\d+\.\d+\.\d+)?$/,
+                type:'asset/resource',
             }
         ]
     },
     plugins:[
+        new HtmlWebpackPlugin({
+            title: 'Production',
+            template: 'src/index.html'
+         }),
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename:'style.css'
+            filename:'css/style.css'
+        }),
+        new CopyPlugin({
+            patterns:[
+                {from:'src/static/news', to:'src/static/news'}
+            ]
         })
-    ]
-
+    ],
+    devServer: {
+        static: {
+            directory: path.join(__dirname, '/build'),
+        },
+        host:'127.0.0.1',
+        port:3000,
+        compress:true,
+        historyApiFallback: true,
+        client: {
+            overlay: true,
+          }
+    }
 }
+

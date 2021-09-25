@@ -1,5 +1,6 @@
 import React from 'react';
 import SoftLogo from '../../../../static/images/softtitle.png';
+import Test from '../../../../static/news/news2.png';
 import { CardNews } from '../CardNews';
 import './style.css';
 
@@ -7,22 +8,22 @@ export const SoftDeveloper = () => {
 
     const news = [
         {
-            image:'./news/news1.png',
+            image:'src/static/news/news1.png',
             header:'Магия в деталях',
             text:'Вам когда нибудь предстояло выполнить разнообразную работу, которая включала в себя множество мелких подзадач?'
         },
         {
-            image:'./news/news2.png',
+            image:'/src/static/news/news2.png',
             header:'Продуктивность',
             text:'Вам когда нибудь предстояло выполнить разнообразную работу, которая включала в себя множество мелких подзадач?'
         },
         {
-            image:'./news/news3.png',
+            image:'/src/static/news/news3.png',
             header:'Ты теряешь время',
             text:'Вам когда нибудь предстояло выполнить разнообразную работу, которая включала в себя множество мелких подзадач?'
         },
         {
-            image:'./news/news4.png',
+            image:'/src/static/news/news4.png',
             header:'Не беги вперёд',
             text:'Вам когда нибудь предстояло выполнить разнообразную работу, которая включала в себя множество мелких подзадач?'
         }
@@ -32,6 +33,7 @@ export const SoftDeveloper = () => {
         <div className="softDeveloper-header">
             <div className="softDeveloper-header-logo">
                 <img src={SoftLogo} alt="SoftLogotip" />
+                {/* <img src={Test} /> */}
             </div>
             <div className="softDeveloper-header-content">
                 <h4 className="softDeveloper-header-content-title" >софт разработчик</h4>

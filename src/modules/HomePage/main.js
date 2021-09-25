@@ -1,3 +1,4 @@
+import React from 'react';
 import ImageTitle from '../../static/images/homepageTitle.jpg';
 import { Rubric } from './components/Rubric/index.js';
 import { AboutWork } from './components/AboutWork/index';

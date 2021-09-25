@@ -23,9 +23,15 @@
     text-transform: uppercase;
 }
 
+@media(max-width:1024px){
+    .rubric-header h2{
+        font-size: 26px;
+    }
+}
+
 .rubric-header-welcomeText{
     position: relative;
-    width:64%;
+    width:800px;
     margin: 0 auto 65px auto;
     font-family:"Montserrat-regular";
     font-size: 18px;
@@ -34,12 +40,24 @@
     word-wrap: normal;
 }
 
+@media(max-width:1024px){
+    .rubric-header-welcomeText{
+        font-size: 16px;
+        width:550px;
+    }
+}
+@media(max-width:580px){
+    .rubric-header-welcomeText{
+        width:400px;
+    }
+}
+
 .rubric-header-welcomeText::after{
     position: absolute;
     bottom:-20px;
-    left:50%;
+    left:47%;
     content:"";
-    width:20px;
+    width:45px;
     background-color:#FFC579 ;
     height:1px;
 }
@@ -50,9 +68,9 @@
     flex-wrap: wrap;
 }
 
-/* @media(max-width:1250px){
-    .rubric-sections{
-        flex-direction: column;
-        align-items: center;
+@media(max-width:1250px){
+    .rubric-sections>:nth-child(2){
+        margin-right: 0;
     }
-} */
+}
+

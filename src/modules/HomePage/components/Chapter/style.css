@@ -11,6 +11,12 @@
     color: white;
 }
 
+@media(max-width:800px){
+    .rubric-chapter-container{
+        margin:20px 0;
+    }
+}
+
 .rubric-chapter-container-header{
     position: relative;
     font-family: 'Montserrat';

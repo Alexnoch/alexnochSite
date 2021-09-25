@@ -1,3 +1,4 @@
+import React from 'react';
 import { CardMyWork } from './../CardMyWork';
 import './style.css';
 
