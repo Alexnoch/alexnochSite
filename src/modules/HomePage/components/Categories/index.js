@@ -15,7 +15,7 @@ const [ activeCategory, setActiveCategory ] = useState('SoftDeveloper');
             <div className="categories-container-menu">
                 <button className={classnames("categories-container-menu-button", {categories_active:activeCategory === 'PersonalExp'})} onClick={()=>setActiveCategory('PersonalExp')}>Личный опыт</button>
                 <button className={classnames("categories-container-menu-button", {categories_active:activeCategory === 'SoftDeveloper'})} onClick={()=>setActiveCategory('SoftDeveloper')}>Софт разработчика</button>
-                <button className={classnames("categories-container-menu-button", {categories_active:activeCategory === 'Category_news'})} onClick={()=>setActiveCategory('PersonalExp')}>Новости</button>
+                <button className={classnames("categories-container-menu-button lastRightMargin", {categories_active:activeCategory === 'Category_news'})} onClick={()=>setActiveCategory('Category_news')}>Новости</button>
             </div>
             {activeCategory === 'SoftDeveloper' ? <SoftDeveloper /> : '' }
         </div>

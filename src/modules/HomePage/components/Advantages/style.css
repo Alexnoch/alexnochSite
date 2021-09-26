@@ -1,5 +1,6 @@
 .aboutSite-container-item{
-    width:30%;
+    flex-basis: 400px;
+    /* width:30%; */
     text-align: center;
 }
 

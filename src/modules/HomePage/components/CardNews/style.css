@@ -6,6 +6,20 @@
     background-image: url('./../../../../static/images/cardBackground.png');
 }
 
+@media(max-width:1024px){
+    .card-item-container{
+        margin-right:10px;
+        width:250px;
+    }
+}
+
+@media(max-width:580px){
+    .card-item-container{
+        width:300px;
+        margin: 0 0 20px 0;
+    }
+}
+
 .card-item-container-body{
     padding:15px;
 }

@@ -8,7 +8,7 @@
 .categories-container{
     max-width: 1240px;
     margin: 0 auto;
-    padding: 65px 0;
+    padding: 65px 10px;
 }
 
 .categories-container-header{
@@ -20,7 +20,6 @@
 }
 
 .categories-container-header-title{
-    margin-bottom: 5px;
     font-family: "Lato";
     font-weight: 600;
     font-size: 30px;
@@ -59,9 +58,21 @@
 }
 
 .categories-container-menu{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
+}
+
+.categories-container-menu::after{
+    position: absolute;
+    bottom:-20px;
+    left:48%;
+    content:"";
+    width:45px;
+    background-color:#FFC579 ;
+    height:1px;
 }
 
 .categories-container-menu-button{
@@ -76,10 +87,8 @@
     
 }
 
-.categories-container-menu-button:hover{
-    color:#FFC579;
-}
 /* Модификаторы */
 .categories_active{
-    color:#FFC579;
+    padding: 0 15px;
+   background-color:#655E57;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
-import SoftLogo from '../../../../static/images/softtitle.png';
-import Test from '../../../../static/news/news2.png';
+import SoftLogo from '../../../../static/images/softtitle.jpg';
 import { CardNews } from '../CardNews';
 import './style.css';
 
@@ -36,7 +35,7 @@ export const SoftDeveloper = () => {
                 {/* <img src={Test} /> */}
             </div>
             <div className="softDeveloper-header-content">
-                <h4 className="softDeveloper-header-content-title" >софт разработчик</h4>
+                <h4 className="softDeveloper-header-content-title" >софт разработчика</h4>
                 <p className="softDeveloper-header-content-text">
                     В этом разделе я расскажу о программах
                     и утилитах которыми пользуюсь сам,
