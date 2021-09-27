@@ -1,7 +1,7 @@
-import { render } from "@testing-library/react";
 import React from "react";
 import { NavLink, Route, Router, Redirect , Switch} from 'react-router-dom';
 import { HomePage } from '../HomePage/main.js';
+import Articles from '../Articles/main.js';
 import Logo  from '../../static/icons/logo.png';
 import Email from '../../static/icons/email.png';
 import Git from '../../static/icons/github.png';
@@ -9,6 +9,7 @@ import Vk from '../../static/icons/vk.png';
 import DropDown from '../../static/icons/dropDown.png';
 import SubLogo from '../../static/icons/alexNoch.png';
 import './style.css';
+
 
 export const Root = () =>{
     return(
@@ -20,9 +21,9 @@ export const Root = () =>{
             </div>
             <div className="topbar-menu-sections">
                 <NavLink className="topbar-menu-link" to="/homePage">Главная</NavLink>
-                <NavLink className="topbar-menu-link" to="/works">Мои статьи</NavLink>
+                <NavLink className="topbar-menu-link" to="/articles">Мои статьи</NavLink>
                 <NavLink className="topbar-menu-link" to="/redirect">Мои работы</NavLink>
-                <NavLink className="topbar-menu-link" to="/redirect">Контакты</NavLink>
+                <NavLink className="topbar-menu-link" to="/redirect">Прайс-лист</NavLink>
             </div>
             <div className="topbar-menu-social">
                 <span className="topbar-menu-social-contactMe">Связь со мной</span>
@@ -37,7 +38,6 @@ export const Root = () =>{
                 <img src={DropDown} alt="Dropdown menu"/>
             </div>
         </div>
-       
     </div>
      <Switch>
          <Route exact path="/">
@@ -45,6 +45,9 @@ export const Root = () =>{
          </Route>
          <Route path="/homePage">
              <HomePage />
+         </Route>
+         <Route path="/articles">
+             <Articles />
          </Route>
     </Switch>  
     </>
