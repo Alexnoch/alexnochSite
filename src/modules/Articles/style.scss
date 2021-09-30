@@ -14,6 +14,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  padding-top:70px;
 }
 
 .articles-header-title{
@@ -52,4 +53,17 @@
   width:15px;
   height:1px;
   background-color: #655E57;
+}
+
+.articles-main-menu{
+  text-align: center;
+}
+
+.articles-navLink{
+  margin-right: 65px;
+  color:white;
+  text-decoration: none;
+  font-size: "Lato";
+  font-weight: bold;
+  font-size: 18px;
 }
