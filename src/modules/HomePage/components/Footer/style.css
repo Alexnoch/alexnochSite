@@ -38,3 +38,13 @@
     color: #655E57;
     text-decoration: underline;
 }
+
+.card-item-copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #363533;
+    color:#363533;
+    font-size: 14px;
+}

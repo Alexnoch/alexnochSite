@@ -1,4 +1,5 @@
 import React from 'react';
+import FooterLogo from './../../../../static/icons/alexNoch.png'
 import './style.css';
 
 
@@ -30,11 +31,12 @@ const Footer = () =>{
                         <p className="footer-categories">метки</p>
                     </div>
                 </div>
+                <div className="card-item-copyright">
+                    <p>Сайт разработан в 2021г. Все права защищены. Копирование сайта запрещено.</p>
+                <img src={FooterLogo} />
+                </div>
             </div>
-            <div className="card-item-copyright">
-                <p>сайт разработан в 2021г. Все права защищены. Копирование сайта запрещено.</p>
-                <img />
-            </div>
+           
         </div>
     )
 }

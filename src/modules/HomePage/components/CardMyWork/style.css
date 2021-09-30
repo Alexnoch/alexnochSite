@@ -36,6 +36,14 @@
     }
 }
 
+@media(max-width:992px){
+    .cardWork-image-container{
+        width:350px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
 .cardWork-image{
     width:100%;
     object-fit: cover;
@@ -51,6 +59,12 @@
 @media(max-width:992px){
     .cardWork-aboutProject{
         width:450px;
+    }
+}
+
+@media(max-width:520px){
+    .cardWork-aboutProject{
+        width:350px;
     }
 }
 

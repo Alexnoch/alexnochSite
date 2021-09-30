@@ -30,6 +30,13 @@
     }
 }
 
+@media(max-width:520px){
+    .softDeveloper-header-logo{
+        width:360px;
+        margin-bottom:20px;
+    }
+}
+
 .softDeveloper-header-content{
     width:50%;
     display: flex;
@@ -40,6 +47,13 @@
 @media(max-width:1024px){
     .softDeveloper-header-content{
         width:485px;
+        text-align: left;
+    }
+}
+
+@media(max-width:1024px){
+    .softDeveloper-header-content{
+        width:350px;
         text-align: left;
     }
 }
