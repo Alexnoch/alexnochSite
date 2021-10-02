@@ -1,0 +1,39 @@
+.big-article {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  &__bottom {
+  }
+  &__content {
+    width: 50%;
+  }
+  &__date {
+  }
+  &__header {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  &__image {
+    width: 50%;
+  }
+  &__link {
+  }
+  &__rubric {
+    color: var(--standart);
+    font-family: var(--latoR);
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+  &__text {
+    font-family: var(--montR);
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color:var(--text);
+  }
+}

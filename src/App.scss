@@ -81,11 +81,26 @@ select {
   font-family: 'Lato_regular';
   src: local('Lato_regular') url(./fonts/LatoRegular.ttf) format('ttf');
 }
-
+//-------------------------------------------------------------------------------Castom-------------------------------------------------------
+/* Дополнительные классы стилей */
 .lastRightMargin{
   margin-right:0;
 }
 
 .accent{
   color:#FFC579;
+}
+
+:root{
+/* Переменные проекта */
+
+// Colors
+--accent:#FFC579;
+--standart:#FFFFFF;
+--text:#FDEFE6;
+--disable:#655E57;
+
+// Fonsts
+--montR:"Montserrat-regular";
+--latoR:"Lato";
 }

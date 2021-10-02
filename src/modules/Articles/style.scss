@@ -1,69 +1,81 @@
-.articles-wrapper{
-  padding-top:50px;
-  background-image: url('./../../static/images/background.png');
+.articles-wrapper {
+  padding-top: 50px;
+  background-image: url("./../../static/images/background.png");
 }
 
-.articles-container{
+.articles-container {
   margin: 0 auto 0 auto;
   max-width: 1240px;
 }
 
-.articles-header{
+.articles-header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding-top:70px;
+  padding-top: 70px;
 }
 
-.articles-header-title{
+.articles-header-title {
   font-family: "Lato";
-    font-weight: 600;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color:#F8F1E7;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f8f1e7;
 }
 
-.articles-header-text{
+.articles-header-text {
   position: relative;
   margin-bottom: 25px;
-  font-family: 'Montserrat-regular';
+  font-family: "Montserrat-regular";
   text-align: center;
   font-size: 14px;
-  color:#FFC579;
+  color: #ffc579;
 }
 
-.articles-header-text::before{
-  content:"";
+.articles-header-text::before {
+  content: "";
   position: absolute;
   top: 50%;
-  left:-25px;
-  width:15px;
-  height:1px;
-  background-color: #655E57;
+  left: -25px;
+  width: 15px;
+  height: 1px;
+  background-color: #655e57;
 }
 
-.articles-header-text::after{
-  content:"";
+.articles-header-text::after {
+  content: "";
   position: absolute;
   top: 50%;
-  right:-25px;
-  width:15px;
-  height:1px;
-  background-color: #655E57;
+  right: -25px;
+  width: 15px;
+  height: 1px;
+  background-color: #655e57;
 }
 
-.articles-main-menu{
+.articles-main-menu {
   text-align: center;
 }
 
-.articles-navLink{
+.articles-navLink {
   margin-right: 65px;
-  color:white;
+  color: white;
   text-decoration: none;
   font-size: "Lato";
   font-weight: bold;
   font-size: 18px;
+}
+
+.articles {
+  &__content {
+    width:80%;
+  }
+  &__main-container {
+    width:100%;
+  }
+  &__sidebar {
+    width:20%;
+  }
 }

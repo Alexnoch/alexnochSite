@@ -1,6 +1,6 @@
 import React from "react"
 import { Root } from './modules/Root/index'
-import "./App.css"
+import "./App.scss"
 
 const App = () => {
 
