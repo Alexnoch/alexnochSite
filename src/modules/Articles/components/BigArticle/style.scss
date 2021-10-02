@@ -3,13 +3,24 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  background: rgba(101, 94, 87, 0.1);
 
   &__bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
   }
   &__content {
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    padding-right:10px;
   }
   &__date {
+    font-family: var(--montR);
+    font-size: 12px;
+    font-weight: 600;
+    color:var(--disable);
   }
   &__header {
     color: var(--accent);
@@ -19,8 +30,15 @@
   }
   &__image {
     width: 50%;
+
+    img{
+      width:100%;
+      object-fit: cover;
+    }
   }
   &__link {
+    color:var(--accent);
+
   }
   &__rubric {
     color: var(--standart);

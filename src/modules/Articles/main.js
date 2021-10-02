@@ -1,12 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import  BigArticle  from './components/BigArticle/index.js'
+import  Footer  from './../HomePage/components/Footer';
+import  BigArticle  from './components/BigArticle/index.js';
+import image from './../../static/images/aboutme.png';
 import './style.scss';
 
 const Articles = () =>{
-
-
-
   return(
     <div className="articles-wrapper">
       <div className="articles-container">
@@ -27,15 +26,17 @@ const Articles = () =>{
                 header="Настройка плагинов"
                 text="
                 Мой первый проект созданный на начальном уровне,
-                первый сайт портфолио, который имел возможность попасть в сеть)
+                первый сайт портфолио, который имел возможность попасть в сеть
                 Ничего особенного,красивый background, минимум фото и информации.
                 "
                 date="21 марта"
                 link="#"
+                image={image}
               />  
             </div>  
           </div>        
       </div>
+      <Footer />
     </div>
   )
 }

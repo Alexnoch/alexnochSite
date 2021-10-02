@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './style.scss';
 
 const BigArticle = (props) =>{
-const { rubric, header, text, date, link } = props;
+const { rubric, header, text, date, link, image } = props;
 
     return(
         <div className="big-article">
@@ -15,7 +15,9 @@ const { rubric, header, text, date, link } = props;
                     <a className="big-article__link" href={link}>Смотреть</a>
                 </div>
             </div>
-            <div className="big-article__image"></div>
+            <div className="big-article__image">
+                <img src={image} />
+            </div>
         </div>
     )
 }
